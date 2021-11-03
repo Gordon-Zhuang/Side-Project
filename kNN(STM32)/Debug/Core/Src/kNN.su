@@ -1,0 +1,4 @@
+kNN.c:23:5:partition.part.0	24	static
+kNN.c:6:7:kNN	60288	static
+kNN.c:23:5:partition	32	static
+kNN.c:56:5:kvote	16	static
