@@ -1,0 +1,6 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+drive.h:17:7:CTrapezoi_defuzzy::CTrapezoi_defuzzy()	16	static
+ACC_BREAK.cpp:11:5:int Acc_Break(float)	184	static
+ACC_BREAK.cpp:84:1:void __static_initialization_and_destruction_0(int, int)	16	static
+ACC_BREAK.cpp:84:1:cpp)	8	static
+ACC_BREAK.cpp:84:1:cpp)	8	static

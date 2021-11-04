@@ -1,0 +1,4 @@
+cmath:645:3:constexpr bool std::isnormal(float)	16	static
+fuzzy.cpp:9:7:float CTrapezoi_defuzzy::integral()	32	static
+fuzzy.cpp:34:7:float CTrapezoi_defuzzy::area()	24	static
+fuzzy.cpp:41:7:float CTrapezoi_fuzzy::hight(float)	16	static
