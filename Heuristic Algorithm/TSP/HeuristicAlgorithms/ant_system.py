@@ -1,4 +1,3 @@
-
 # -*- coding: utf-8 -*-
 
 
@@ -127,20 +126,19 @@ class AntSystem:
                 self.best_objective_value = val
                        
 #%%
-
+"""
 data = pd.read_csv("data/Latitude and Longitude of Taiwan County.csv")
 coordinate = data.iloc[:,1:].values
 print(type(coordinate[0][0]))
 problem = TSPProblem(coordinate,data["縣市"].values)
-
 """
+
 data = random_adress_test.random_adress()
 data = np.array(data)
 coordinate = data[:,1:].astype('float')
 
 problem = TSPProblem(coordinate,data[:,0])
-"""
-pop_size = 10
+pop_size = 60
 pheromone_drop_amount = 0.001
 evaporate_rate = 0.1
 pheromone_factor = 1
@@ -150,7 +148,7 @@ solver = AntSystem(pop_size,coordinate,pheromone_drop_amount,evaporate_rate,
                    problem.get_distance,problem.compute_objective_value)
 solver.initialize()
 
-for iteration in range(10):
+for iteration in range(100):
     solver.each_ant_construct_its_solution()
     solver.update_pheromone()
     solver.update_best_solution()
@@ -184,11 +182,9 @@ def draw_map(path,locations,names):
     fmap.save(path)        
 
 
-path = f"tawian_test.html"
+path = f"tawian_random.html"
 names = problem.to_cities_name(solver.best_solution)
 locations = [problem.coordinate[i].tolist()[::-1] for i in solver.best_solution]
 locations.append(locations[0])
 locations = np.array(locations)
-
-
 draw_map(path,locations,names)
