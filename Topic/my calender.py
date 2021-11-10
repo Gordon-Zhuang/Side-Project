@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from collections import defaultdict
 class MyCalendarThree:
     def __init__(self):
@@ -17,7 +16,6 @@ class MyCalendarThree:
 test = [[10,20],[50,60],[10,40],[5,15],[5,10],[25,55]]
 calender = MyCalendarThree()
 for i in range(len(test)):
-=======
 from collections import defaultdict
 class MyCalendarThree:
     def __init__(self):
@@ -36,5 +34,4 @@ class MyCalendarThree:
 test = [[10,20],[50,60],[10,40],[5,15],[5,10],[25,55]]
 calender = MyCalendarThree()
 for i in range(len(test)):
->>>>>>> f0d27928e20afecd1453ff6c377fa43eadf1f97f
     print(calender.book(test[i][0], test[i][1]))

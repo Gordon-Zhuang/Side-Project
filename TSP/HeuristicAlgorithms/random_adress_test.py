@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 from geopy.geocoders import Nominatim
 import random
 def random_adress():
@@ -38,7 +38,7 @@ def random_adress():
         returnarry.append([city + suburb + road, float(long), float(lat)])
 
     return returnarry
-=======
+
 from geopy.geocoders import Nominatim
 import random
 def random_adress():
@@ -78,4 +78,4 @@ def random_adress():
         returnarry.append([city + suburb + road, float(long), float(lat)])
 
     return returnarry
->>>>>>> f0d27928e20afecd1453ff6c377fa43eadf1f97f
+
